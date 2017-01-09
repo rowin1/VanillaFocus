@@ -15,4 +15,5 @@ VanillaFocus is a Classic WoW Addon that provides basic focus functionality for 
   - /targetfocus : Targets focus
 
 ### Installation
-- Drag and drop the "VanillaFocus" folder into your Interface\AddOns\ directory
+- [Download](https://github.com/rowin1/VanillaFocus/archive/master.zip) the latest version of VanillaFocus.
+- Extract VanillaFocus-master and drag and drop the "VanillaFocus" folder into your Interface\AddOns directory
