@@ -1,0 +1,5 @@
+## Interface: 11200
+## Title: Vanilla Focus
+## Notes: Adds basic focus functionality for Vanilla
+## Author: Rowin
+## Version: 1.0
