@@ -29,7 +29,10 @@ end
 
 function VanillaFocus_SetFocus(name)
 	if (GetUnitName("target") ~= nill) then
-		VanillaFocus_Focus = Get	
+		VanillaFocus_Focus = GetUnitName("target");
+	elseif (name ~= "") then
+		VanillaFocus_Focus = name;
+	end
 end
 
 function VanillaFocus_ClearFocus()
@@ -37,9 +40,18 @@ function VanillaFocus_ClearFocus()
 end
 
 function VanillaFocus_TargetFocus()
+	if (VanillaFocus_Focus ~= nill) then
+		SlashCmdList["TARGET"](VanillaFocus_Focus);
+	end
 end
 
-function VanillaFocus_FocusCast()
+function VanillaFocus_FocusCast(spell)
+	if (VanillaFocus_Focus ~= nill) then
+		VanillaFocus_currentTarget = GetUnitName("target");
+		SlashCmdList["TARGET"](VanillaFocus_Focus);
+		CastSpellByName(spell);
+		TargetUnit(VanillaFocus_currentTarget);
+	end
 end
 
 function VanillaFocus_SlashCommandHandler(msg) 
