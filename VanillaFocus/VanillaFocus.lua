@@ -1,4 +1,5 @@
 VanillaFocus_Focus = nil;
+VanillaFocus_OnLoad();
 
 function VanillaFocus_OnLoad()
 	SLASH_VANILLAFOCUS1 = "/vanillafocus";
