@@ -5,14 +5,14 @@ VanillaFocus is a Classic WoW Addon that provides basic focus functionality for 
 - Help
   - /vanillafocus - Get a list of commands ingame.
 - Focus
-  - /focus : Sets current target as focus
-  - /focus name : Sets NAME as focus
+  - /focus - <i>Sets current target as focus</i>
+  - /focus name - <i> Sets NAME as focus</i>
 - Clear Focus
-  - /clearfocus : Clears focus
+  - /clearfocus - <i>Clears focus</i>
 - Focus Cast
-  - /focuscast spell : Casts spell on focus
+  - /focuscast spell - <i>Casts spell on focus</i>
 - Target Focus
-  - /targetfocus : Targets focus
+  - /targetfocus - <i>Targets focus</i>
 
 ### Installation
 - [Download](https://github.com/rowin1/VanillaFocus/archive/master.zip) the latest version of VanillaFocus.
