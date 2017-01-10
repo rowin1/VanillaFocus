@@ -28,10 +28,10 @@ function VanillaFocus_OnLoad()
 end
 
 function VanillaFocus_SetFocus(name)
-	if (GetUnitName("target") ~= nill) then
-		VanillaFocus_Focus = GetUnitName("target");
-	elseif (name ~= "") then
+	if (name ~= "") then
 		VanillaFocus_Focus = name;
+	elseif (GetUnitName("target") ~= nill) then
+		VanillaFocus_Focus = GetUnitName("target");
 	end
 end
 
