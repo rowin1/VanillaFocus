@@ -3,3 +3,9 @@
 ## Notes: Adds basic focus functionality for Vanilla
 ## Author: Rowin
 ## Version: 1.0
+## SavedVariables:
+## OptionalDeps:
+## Dependencies: 
+
+VanillaFocus.lua
+localization.lua
