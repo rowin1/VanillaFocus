@@ -1,5 +1,5 @@
 VanillaFocus_Focus = nil;
-VanillaFocus_OnLoad();
+VANILLAFOCUS = {};
 
 function VanillaFocus_OnLoad()
 	SLASH_VANILLAFOCUS1 = "/vanillafocus";
@@ -27,6 +27,8 @@ function VanillaFocus_OnLoad()
 	
 	DEFAULT_CHAT_FRAME:AddMessage(VANILLAFOCUS_VERSION..VANILLAFOCUS_LOADED);
 end
+
+VanillaFocus_OnLoad();
 
 function VanillaFocus_SetFocus(name)
 	if (name ~= "") then
