@@ -1,3 +1,6 @@
+local VANILLAFOCUS, namespace = ...
+local L = namespace.L
+
 VanillaFocus_Focus = nil;
 VANILLAFOCUS = {};
 
@@ -25,7 +28,7 @@ function VanillaFocus_OnLoad()
 		VanillaFocus_TargetFocus();
 	end
 	
-	DEFAULT_CHAT_FRAME:AddMessage(VANILLAFOCUS_VERSION..VANILLAFOCUS_LOADED);
+	DEFAULT_CHAT_FRAME:AddMessage("Vanilla Focus v1.0".."Loaded - /vf");
 end
 
 VanillaFocus_OnLoad();
@@ -65,11 +68,11 @@ function VanillaFocus_SlashCommandHandler(msg)
 end
 
 function VanillaFocus_Help()
-	DEFAULT_CHAT_FRAME:AddMessage(VANILLAFOCUS_VERSION..VANILLAFOCUS_HELP1);
-	DEFAULT_CHAT_FRAME:AddMessage("/focus         -- "..VANILLAFOCUS_HELP2);
-	DEFAULT_CHAT_FRAME:AddMessage("/focus name         -- "..VANILLAFOCUS_HELP3);
-	DEFAULT_CHAT_FRAME:AddMessage("/clearfocus         -- "..VANILLAFOCUS_HELP4);
-	DEFAULT_CHAT_FRAME:AddMessage("/focuscast spell -- "..VANILLAFOCUS_HELP5);
-	DEFAULT_CHAT_FRAME:AddMessage("/targetfocus         -- "..VANILLAFOCUS_HELP6);
+	DEFAULT_CHAT_FRAME:AddMessage(L["Vanilla Focus v1.0"]..L[" - Usage:"]);
+	DEFAULT_CHAT_FRAME:AddMessage("/focus         -- "..L[]Sets current target as focus"]);
+	DEFAULT_CHAT_FRAME:AddMessage("/focus name         -- "..L["Sets NAME as focus"]);
+	DEFAULT_CHAT_FRAME:AddMessage("/clearfocus         -- "..L["Clears current focus"]);
+	DEFAULT_CHAT_FRAME:AddMessage("/focuscast spell -- "..L["Casts SPELL on focus"]);
+	DEFAULT_CHAT_FRAME:AddMessage("/targetfocus         -- "..L["Targets focus"]);
 end
 
