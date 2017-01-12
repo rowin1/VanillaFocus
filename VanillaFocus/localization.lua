@@ -1,13 +1,25 @@
-VANILLAFOCUS_VERSION = "Vanilla Focus v1.0"
-VANILLAFOCUS_LOCALE = GetLocale();
+local _, namespace = ...
 
-if (VANILLAFOCUS_LOCALE == "enUS") then
--- EN
-VANILLAFOCUS_LOADED = "Loaded - /vf"
-VANILLAFOCUS_HELP1 = " - Usage:"
-VANILLAFOCUS_HELP2 = "Sets current target as focus"
-VANILLAFOCUS_HELP3 = "Sets NAME as focus"
-VANILLAFOCUS_HELP4 = "Clears current focus"
-VANILLAFOCUS_HELP5 = "Casts SPELL on focus"
-VANILLAFOCUS_HELP6 = "Targets focus"
-end
+local L = setmetatable({}, { __index = function(t, k)
+	local v = tostring(k)
+	rawset(t, k, v)
+	return v
+end })
+
+namespace.L = L
+
+local LOCALE = GetLocale()
+
+if LOCALE == "deDE" then
+	
+	L["Vanilla Focus v1.0"] = ""
+	L["Loaded - /vf"] = ""
+	L[" - Usage:"] = "" 
+	L["Sets current target as focus"] = ""
+	L["Sets NAME as focus"] = ""
+	L["Clears current focus"] = ""
+	L["Casts SPELL on focus"] = ""
+	L["Targets focus"] = ""
+
+return end
+
