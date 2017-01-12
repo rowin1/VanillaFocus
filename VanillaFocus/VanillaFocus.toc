@@ -7,6 +7,4 @@
 ## OptionalDeps:
 ## Dependencies: 
 
-VanillaFocus.xml
 VanillaFocus.lua
-localization.lua
