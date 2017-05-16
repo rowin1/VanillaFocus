@@ -2,12 +2,12 @@
 VanillaFocus is a Classic WoW Addon that provides basic focus functionality for Vanilla WoW.
 
 ### Usage
-####Help
+#### Help
 - Get a list of commands ingame
  `/vanillafocus`
  `/vf`
 
-####Commands
+#### Commands
 
 - Set the current target as focus
  `/focus`
